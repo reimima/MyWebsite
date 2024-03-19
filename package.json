@@ -7,29 +7,31 @@
     "private": true,
     "author": "reimima <reimima0916@gmail.com>",
     "license": "MIT",
-    "homepage": "",
+    "homepage": "https://github.com/reimima/MyWebsite?tab=readme-ov-file#mywebsite",
     "repository": {
         "type": "git",
-        "url": "git+"
+        "url": "git+https://github.com/reimima/MyWebsite.git"
     },
     "bugs": {
-        "url": ""
+        "url": "https://github.com/reimima/MyWebsite/issues"
     },
     "scripts": {
         "dev": "vite",
-        "build": "tsc && vite build",
+        "build": "rm -rf dist && tsc && vite build",
         "preview": "vite preview --port 8080",
         "lint": "biome check --apply src"
     },
     "dependencies": {
         "react": "^18.2.0",
-        "react-dom": "^18.2.0"
+        "react-dom": "^18.2.0",
+        "react-router-dom": "^6.22.3"
     },
     "devDependencies": {
         "@biomejs/biome": "^1.6.1",
         "@types/react": "^18.2.67",
         "@types/react-dom": "^18.2.22",
         "@vitejs/plugin-react-swc": "^3.6.0",
+        "rimraf": "^5.0.5",
         "typescript": "^5.4.2",
         "vite": "^5.1.6"
     },
